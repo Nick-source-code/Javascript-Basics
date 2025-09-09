@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict';
+    const erwachsen = 18;
+    let name  = '',
+        alter = '';
+    name = prompt('Bitte gib deinen Namen ein!', name);
+    alter = prompt('Bitte gib dein Alter ein!', alter);
+
+    if (alter < erwachsen) {
+        console.log('Du kommst hier net rein!');
+    }
+    else {
+        console.log(`Hallo ${name}!`);
+    }
+    </script>
+    
+</body>
+</html>

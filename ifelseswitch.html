@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+let
+  name  = '',
+  alter = '',
+  eingabe = '',
+  text = '';
+
+const erwachsen = 18;
+
+name = prompt('Bitte gib deinen Namen ein!');
+alter = prompt('Bitte gib dein Alter ein!');
+
+if (isNaN(alter)) {
+  eingabe = 'dumm';
+} 
+else if (alter < erwachsen) {
+  eingabe = 'jung';
+} else {
+  eingabe = 'ok';
+}
+
+switch (eingabe) {
+  case 'jung':
+    text ='Du bist leider zu jung!';
+    break;
+  case 'dumm':
+    text ='Sie sind leider zu dumm, eine Zahl einzugeben!';
+    break;
+  default:
+    text = `Hallo ${name}!`;
+    break;
+}
+  
+alert(text);
+    </script>
+</body>
+</html>
